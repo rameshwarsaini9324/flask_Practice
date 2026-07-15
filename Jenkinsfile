@@ -2,9 +2,9 @@ pipeline {
 
     agent any
 
-    environment {
-        APP_PORT = "5000"
-    }
+   environment {
+    MONGO_URI = credentials('MONGO_URI')
+}
 
     stages {
 
